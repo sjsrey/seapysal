@@ -1,0 +1,41 @@
+\begin{thebibliography}{}
+
+\bibitem[\protect\astroncite{Murray}{2017}]{Murray_2017_ars}
+Murray, A.~T. (2017).
+\newblock Regional analytics.
+\newblock {\em The Annals of Regional Science}, 59(1):1–13.
+
+\bibitem[\protect\astroncite{Rey}{2009}]{Rey_2009}
+Rey, S.~J. (2009).
+\newblock Show me the code: spatial analysis and open source.
+\newblock {\em Journal of Geographical Systems}, 11(2):191--207.
+
+\bibitem[\protect\astroncite{Rey}{2014}]{rey_open_2014}
+Rey, S.~J. (2014).
+\newblock Open regional science.
+\newblock {\em Annals of Regional Science}, 52(3):825--837.
+
+\bibitem[\protect\astroncite{Rey}{2017}]{Rey17_codeastext}
+Rey, S.~J. (2017).
+\newblock Code as text: Open source lessons for geospatial research and
+  education.
+\newblock In Thill, J.-C. and Dragicevic, S., editors, {\em Geocomputational
+  analysis and modeling of regional systems}, pages 7--21. Springer.
+
+\bibitem[\protect\astroncite{Rey and Anselin}{2007}]{rey_pysal:_2007-3}
+Rey, S.~J. and Anselin, L. (2007).
+\newblock {PySAL}: {A} {Python} library of spatial analytical methods.
+\newblock {\em The Review of Regional Studies}, 37(1):5--27.
+
+\bibitem[\protect\astroncite{Rey and Janikas}{2006}]{rey_stars:_2006-3}
+Rey, S.~J. and Janikas, M.~V. (2006).
+\newblock {STARS}: {Space}-{Time} {Analysis} of {Regional} {Systems}.
+\newblock {\em Geographical Analysis}, 38(1):67--86.
+
+\bibitem[\protect\astroncite{Waddell}{2002}]{waddell_urbansim:_2002}
+Waddell, P. (2002).
+\newblock {UrbanSim}: {Modeling} urban development for land use,
+  transportation, and environmental planning.
+\newblock {\em Journal of the American Planning Association}, 68(3):297--314.
+
+\end{thebibliography}
