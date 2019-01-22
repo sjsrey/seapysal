@@ -286,7 +286,7 @@ face and Python shined brightly.
 
 Python excelled at string processing and in dealing with heterogeneous data.
 And although, at the time, the numerical support in Python was much thinner
-than it is today, there really good third-party modules at that time. For
+than it is today. There were really good third-party modules at that time. For
 example, Numeric was the precursor to today's workhorse numpy. Numeric had a
 syntax very similar to Matlab's and, in turn, GAUSS which made the transition
 feasible. The gains Python offered in terms of the data integration and management
@@ -310,9 +310,9 @@ Although the two efforts were targeting different areas of the research stack,
 spatial econometrics on one hand and space-time data analysis on the other
 hand, the programs relied on some common constructs in the form of spatial
 weights and certain types of representations and algorithms. We had been
-implementing these separately on own two teams and we thought that, by
+implementing these separately on our own two teams and we thought that, by
 pulling our development resources and implementing these features in the best
-way possible score to the best of our abilities, we could exploit economies of
+way possible to the best of our abilities, we could exploit economies of
 scale. The idea was to build a library of advanced spatial analytical
 functionality that each of our individual projects could then rely on to develop
 specialized applications and, more importantly, a wider Community could
@@ -328,8 +328,7 @@ and geographic information science. Given the power of the language we had
 experienced in our own use, we thought this was a missed opportunity and we
 wanted to do what we could to fuel the uptake of Python in our home
 disciplines. At the time, there was very limited Python code for doing
-geospatial analysis, and no shapefile readers were available nor anything for
-spatial data analysis or spatial econometrics.
+geospatial analysis, and no basic GIS support to build upon.
 
 We found Python to be an excellent language to facilitate rapid prototyping and
 testing of ideas. It is a simple language to pick up but that does not mean it
@@ -337,8 +336,9 @@ is a toy language. Not only does it excel from a pedagogical perspective, but
 can be used to build applications that scale in an impressive fashion. For
 example Google makes heavy use of Python. There are also prominent scientific
 projects that rely on Python. For example, the LIGO project[fn:ligo] that recorded
-the collision of two black holes for the first time or detected gravitational
-waves made heavy use of Python and its workflow.
+the collision of two black holes for the first time gravitational waves made
+heavy use of Python and its workflow. Incidentally, this work also resulted in
+a Nobel prize.
 
 
 [fn:ligo] \url{ https://www.ligo.caltech.edu/}
@@ -390,7 +390,12 @@ These two features of PySAL served us well in the early days of the project.
 But as time has passed, the Python spatial analysis stack has matured, we are
 now at a point where we can start to replace some of the Python implementations
 that the early PySAL team did with more modern and specialized packages for
-geoprocessing, file reading, and map projections.
+geoprocessing, file reading, and map projections. A key win here as been the
+package geopandas.[fn:geopandas]
+
+
+[fn:geopandas] \url{https://geopandas.org}
+
 
 Over time we have also come to recognize that the single monolithic
 architecture of the library, while easing installation, had a number of
@@ -498,14 +503,13 @@ multilevel models; and spglm a package for fitting sparse general linear models
 
 
 Upstream packages that want to use pieces, but not all, of PySAL now have much
-more flexibility. The most prominent case of this is geopandas[fn:geopandas]
+more flexibility. The most prominent case of this is geopandas
 which prior, to the refactoring would import all of PySAL to have access to
 the map classification routines. Now as part of the refactoring , the larger
 import is no longer necessary and geopandas can instead import mapclassify
 directly so that the dependency footprint is much thinner.
 
 
-[fn:geopandas] \url{https://geopandas.org}
 
 
 The refactoring has been largely successful, but there are some changes that
@@ -768,7 +772,7 @@ worked on PySAL and related open source projects because I saw the benefits
 from my own personal research agenda that these allowed for. And I was
 convinced that these were important activities for me to spend my time on.
 
-Others at the time others felt the same way. Jim LeSage was actually doing open
+Others at the time felt the same way. Jim LeSage was actually doing open
 source before the term was coined. By releasing his spatial econometrics
 toolbox[fn:jim] open to researchers, Jim played a major role in stimulating the growth
 of spatial econometrics.
@@ -802,11 +806,19 @@ reinvented. Moreover it is possible to contribute enhancements back to Danis
 courses resulting in a stronger set of materials for future iterations of the
 course. Dani has been a core developer on the PySAL project where he became
 introduced to open source practices and creatively adopted them to his teaching
-duties.
+duties. His example shows that the nature of contributions to open source
+projects has evolved over time, from the early days were only code enhancements
+and possibility documentation were considered contributions, to the current
+situation where contributions have grown to take the form of educational
+materials as well as efforts to disseminate those materials wide and grow the
+community around open source projects.
 
 
 [fn:dani] \url{https://darribas.org/gds16/} 
 [fn:cc] \url{https://creativecommons.org/}
+
+
+TODO Add dois where possible
 
 
 Levi Wolf is also a core member of the PySAL development project and has made
