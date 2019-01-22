@@ -76,7 +76,7 @@ reinvent itself to claim new territory in the modern era of big data.
 
 I first provide an overview of PySAL in terms of the original motivation for
 the project and its early history. The structure of PySAL and the key spatial
-analytical functionality it offers are then discussed in Section 3. In section
+analytical functionality it offers are then discussed in Section 3. In Section
 4, I shift the focus to explore some of the wider currents that my experiences
 on PySAL and the engagement with open source have identified. These include the
 rise of open source, open science, open education, and open community
@@ -105,18 +105,18 @@ face and Python shined brightly.
 
 Python excelled at string processing and in dealing with heterogeneous data.
 And although, at the time, the numerical support in Python was much thinner
-than it is today there really good third-party modules at that time, for
-example Numeric was the precursor to today's workhorse numpy. Numeric had a
-syntax very similar to Matlab's and, in turn, GAUSS which made the transition
+than it is today, there really good third-party modules at that time. For
+example, Numeric was the precursor to today's workhorse numpy. Numeric had a
+syntax very similar to Matlab's and, in turn, GAUSS made the transition
 feasible. The gains Python offered in terms of the data integration and management
 component of the research process more than offset the relatively weaker
-Numerical libraries. And since then the numerical stack in Python has become
+numerical libraries. And since then the numerical stack in Python has become
 excellent.
 
 As such I jumped to Python very early. Python was not only a fantastic
 replacement for GAUSS in terms of doing econometric work, but it had wide scope
 for all kinds of purposes. I used it to write grading programs, generate
-indices for textbooks, and even wrote an entire journal management system which
+indices for textbooks, and even write an entire journal management system which
 I used as my term of editor of the International Regional Science Review.
 Python quickly became my tool choice for new duties I had to carry out as an
 academician. 
@@ -147,7 +147,7 @@ and geographic information science. Given the power of the language we had
 experienced in our own use, we thought this was a missed opportunity and we
 wanted to do what we could to fuel the uptake of Python in our home
 disciplines. At the time, there was very limited Python code for doing
-geospatial analysis, No shapefile readers were available nor anything for
+geospatial analysis, and no shapefile readers were available nor anything for
 spatial data analysis or spatial econometrics.
 
 We found Python to be an excellent language to facilitate rapid prototyping and
@@ -247,7 +247,7 @@ carte route and pick specific packages in mix and match them to support a
 specialized workflow.
 
 Since adopting this model, we have also seen benefits in the growth in the number
-of packages coming into the system. So we are pleased to see that a lowering the
+of packages coming into the system. So we are pleased to see that a lowering
 onboarding cost for new developers has resulted from this refactoring.
 
 
@@ -271,12 +271,12 @@ will be supported, but only for bug fix releases.
 The reorganization of PySAL is along four groups of packages that address the
 certain type of spatial analysis: explore, model, viz, and lib. Lib is the core
 package and it is here where we handle file-io, spatial weights, and
-geoprocessing. All of the other packages in the Python ecosystem import where
+geoprocessing. All of the other packages in the Python ecosystem import where they
 are dependent upon lib.
 
 Under the explore family of packages we have ESDA which supports exploratory
-spatial data analysis in the form of global and local test for spatial
-correlation as well as rates smoothing. GIDDY for geospatial distribution
+spatial data analysis in the form of global and local tests for spatial
+autocorrelation as well as rates smoothing. GIDDY for geospatial distribution
 Dynamics implements classic Markov and spatial Markov models for longitudinal
 spatial data along with measures for spatial income mobility and other types of
 intra-distributional change. In addition explore includes spaghetti which is
@@ -288,7 +288,7 @@ common applications programming interface (API) for lightweight visualization
 functionality on top of the other PySAL packages. mapclassify is a second
 component of the visualization layer that implements a large number of
 classification schemes for choropleth mapping, and also supports updating and
-streaming type data. Rouding out the viz group is legendgram, a novel approach
+streaming type data. Rounding out the viz group is legendgram, a novel approach
 to develop being and representing the classification underlying a choropleth
 map.
 
@@ -335,7 +335,7 @@ science community has benefited from the open source movement. There are two
 freedoms underline the notion of free software. First, is to so called "free
 beer" freedom. This means that there is no monetary cost involved in acquiring
 software: it is available for anybody who can download it. This has
-particularly important to universities given tight budgets. But this also has
+particularly importance to universities given tight budgets. But this also has
 profound pedagogical benefits in that students are now no longer tethered to a
 lab computer holding licensed software. They can now install the software on
 their own personal computers and time-shift their activity which facilitates
@@ -370,8 +370,8 @@ science there is so much duplication in individual scholars producing the
 courses as part of their teaching mission. Everyone goes on it alone and there
 is limited sharing of materials. At best, perhaps syllabi are exchanged and
 maybe the occasional PowerPoint is borrowed, but there are no formal mechanisms
-or any sense of infrastructure to facilitate the sharing. This is changing and
-other disciplines where entire courses from lecture notes problem sets are
+or any sense of infrastructure to facilitate the sharing. This is changing in
+other disciplines where entire courses from lecture notes to problem sets are
 increasingly being posted on open source GitHub repositories. Releasing these
 materials under Creative Commons license works to protect the intellectual
 contributions of the original authors and they are very flexible licenses in
@@ -381,14 +381,13 @@ and derivative works.
 This type of model is very exciting if one thinks about being able to spend
 time on an enhancement  and building upon the shoulders of a great teacher
 rather than having to reinvent many teaching wheels. Our courses would be much
-better for if we could start to think about community-based educational
-materials
+better if we could start to think about community-based educational
+materials.
 
 
 The third larger current that PySAL has swum in reflects the growing emphasis
 placed on the health of a community associated with a project. Here questions
-about the exclusionary nature of disciplines have been at the forefront many of
-the open-source meetings that I've attended in past. This has been a highly
+about the exclusionary nature of disciplines have been at the forefront of many open-source meetings that I've attended in the past. This has been a highly
 educational process for me, as I was largely ignorant about the cost to our
 science of explicit and implicit biases. These biases can lead to different
 types of barriers to potential community membership. Some of these barriers
@@ -408,7 +407,7 @@ that the reward structure is changing. It was very difficult to get recognition
 for software development contributions. What mattered were journal articles and
 grants and contracts for promotion cases. As such there was no incentive to
 pursue those activities and unsurprisingly scientific software for regional
-science (and all science for that matter, were under furnished. All the same, I
+science and all science for that matter, were under furnished. All the same, I
 worked on PySAL and related open source projects because I saw the benefits
 from my own personal research agenda that these allowed for. And I was
 convinced that these were important activities for me to spend my time on.
@@ -443,12 +442,12 @@ similar courses in that those materials are available and do not have to be
 reinvented. Moreover it is possible to contribute enhancements back to Danis
 courses resulting in a stronger set of materials for future iterations of the
 course. Dani has been a core developer on the PySAL project where he became
-introduced open source practices and creatively adopted them to his teaching
+introduced to open source practices and creatively adopted them to his teaching
 duties.
 
 
 Levi Wolf is also a core member of the PySAL development project and has made
-major contributions to not just to PySAL but other packages in the urban and
+major contributions not just to PySAL but other packages in the urban and
 regional software ecosystem. Chief among these is CenPy\footnote{\url{https://github.com/ljwolf/cenpy}}, which is an
 open-source package that allows a researcher to interface with the census api.
 
@@ -511,12 +510,12 @@ I think this reflects the latter being more engaged with developments in
 machine learning and data science more broadly, while regional science as a
 field has been fairly slow to explore these areas.
 
-What can we as a academic community do to enhance the adoption open source
+What can we as an academic community do to enhance the adoption of open source
 practices? We can do a lot. Some of it we already are doing, and I think we
 should simply continue and enhance these efforts. For example, the NARSC
 meetings have been offering regular workshops on PySAL and other packages
 for the past five years. The number of people taking these has
-continued to expand and, increasingly, the participants are asking asking for
+continued to expand and, increasingly, the participants are asking for
 multi-day workshops. So the demand is clearly there. This suggests that we
 should be thinking about more offerings at the regional and international
 regional science meetings.
@@ -554,15 +553,15 @@ amount of work that has been done on the question of regional inequality but
 a complete lack of any high-profile visualization capturing the public's
 attention to the critical nature of this issue. I think this is low-hanging
 fruit that could be grasped by a group of regional scientists to help put
-us back on the radar screen
+us back on the radar screen.
 
 
 I'm glad to report that I am not Don Quixote here when it comes to the notion
 of the importance of analytics. My colleague Alan Murray in his 2017 WRSA
 presidential address \citep{Murray_2017_ars} actually spoke about the need for
-regional analytics. We have the raw material, it is a matter of organizing the
-community around these initiatives. I'm fully confident we are capable of doing
-this and I'm very optimistic that we will do so and create an enhanced a
+regional analytics. We have the raw material, and it is a matter of organizing the
+community around these initiatives. I'm fully confident that we are capable of doing
+this and I'm very optimistic that we will do so and create an enhanced and
 more relevant regional science.
 
 \bibliography{../../bibliography/references}
