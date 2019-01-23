@@ -14,6 +14,16 @@
 #+EXPORT_EXCLUDE_TAGS: noexport
 #+OPTIONS: H:2 num:nil toc:nil \n:nil @:t ::t |:t ^:{} _:{} *:t TeX:t LaTeX:t
 #+STARTUP: showall
+
+*Abstract* This paper examines the field of regional science from the
+perspective of wider developments surrounding open source software and the
+rising open science movement. Regional science has been fairly isolated from
+these currents and a number of possible explanations for that isolation are
+identified. Opportunities that the emerging fields of data science and
+analytics afford for regional science are identified, and exemplar efforts
+leading the charge in engaging with these opportunities are highlighted.
+
+
 * Introduction
 
 I am honored to have been selected to give the /Spatial Economic Analysis
