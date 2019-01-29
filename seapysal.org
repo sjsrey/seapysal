@@ -12,7 +12,7 @@
 #+LaTeX_HEADER: \subsectionfont{\normalfont\itshape}
 #+EXPORT_SELECT_TAGS: export
 #+EXPORT_EXCLUDE_TAGS: noexport
-#+OPTIONS: H:2 num:nil toc:nil \n:nil @:t ::t |:t ^:{} _:{} *:t TeX:t LaTeX:t
+#+OPTIONS: H:2 author:nil num:nil toc:nil \n:nil @:t ::t |:t ^:{} _:{} *:t TeX:t LaTeX:t
 #+STARTUP: showall
 
 *Abstract* This paper examines the field of regional science from the
