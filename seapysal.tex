@@ -1,4 +1,4 @@
-% Created 2019-01-29 Tue 09:08
+% Created 2019-02-28 Thu 09:05
 % Intended LaTeX compiler: pdflatex
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
@@ -14,6 +14,7 @@
 \usepackage{amssymb}
 \usepackage{capt-of}
 \usepackage{hyperref}
+%\usepackage{minted}
 \usepackage[ttscale=.875]{libertine}
 \usepackage{sectsty}
 \usepackage[authoryear]{natbib}
@@ -26,7 +27,7 @@
  pdftitle={PySAL: The First Ten Years},
  pdfkeywords={},
  pdfsubject={},
- pdfcreator={Emacs 25.2.1 (Org mode 9.1.13)}, 
+ pdfcreator={Emacs 25.1.1 (Org mode 9.2)}, 
  pdflang={English}}
 \begin{document}
 
@@ -41,15 +42,12 @@ leading the charge in engaging with these opportunities are highlighted.
 
 
 \section*{Introduction}
-\label{sec:org8bcb62c}
+\label{sec:orgd005918}
 
 I am honored to have been selected to give the \emph{Spatial Economic Analysis
 Plenary}.\footnote{This paper is based on the Spatial Economic Analysis Plenary Lecture
 given at the 58th Congress of the European Regional Science Association, Cork,
-Ireland, August 29, 2018. I am thankful for the comments of Renan Cortes, Su
-Han, Wei Kang, and Elijah Knaap on this paper. Any remaining errors are mine
-alone. This research was supported in part by NSF Grants SES-1831615 and
-SES-1733705.} I would like to use this opportunity to reflect on my experiences as
+Ireland, August 29, 2018.} I would like to use this opportunity to reflect on my experiences as
 co-founder and lead developer of the Python Spatial Analysis Library: PySAL. I
 do so as it provides an interesting window on large-scale trends shaping
 science, of which I think our community of regional scientists need to be more
@@ -70,12 +68,12 @@ technological innovations that are growing out of open source and open science
 which are fundamentally reshaping pedagogy as well as the way we do and report
 research.
 
-I recognize the structure of this talk is different from the normal
+I recognize the structure of this paper is different from the normal
 presentation of a new set of methods that one might expect in the literature.
 But I hope that by blending the coverage of the PySAL together with these
 broader themes, there will be something in it for everybody.
 
-This talk makes three contributions. Through the lens of my
+This paper makes three contributions. Through the lens of my
 experiences on open source projects inside of academia, the underlying
 institutional barriers that have isolated regional science from the open source
 revolution are illuminated. Second, using the specific case of the Python
@@ -96,8 +94,8 @@ generations of regional scientists identified and the number of opportunities
 that stand in front of the regional science community.
 
 \section*{PySAL Origins}
-\label{sec:org8714604}
-PySAL began its life as many open source efforts do: it was scratching
+\label{sec:orgb135799}
+PySAL began its life as many open source effort do: it was scratching
 an itch that its creators had. In this case the creators were myself and my
 long-time colleague Luc Anselin. We have been working in spatial econometrics
 using the matrix language GAUSS. Around 1993, I was exposed to the Python
@@ -105,7 +103,7 @@ language through my interactions with the Linux community. After a short span of
 time with the Python language it became apparent that it offered some major
 advantages over GAUSS as a language for supporting empirical research. Being a
 matrix language, GAUSS was excellent for expressing the mathematical structure
-of different econometric specifications, and for transcribing what one would
+of different econometrics specification, and for transcribing what one would
 read in an econometrics textbook into practical code. However, in most empirical
 research projects the estimation of models represents a tiny fraction of the
 overall work effort. What often goes unsaid, but is painfully clear, is that
@@ -115,7 +113,7 @@ face and Python shined brightly.
 
 Python excelled at string processing and in dealing with heterogeneous data.
 And although, at the time, the numerical support in Python was much thinner
-than it is today, there were really good third-party modules available. For
+than it is today. There were really good third-party modules at that time. For
 example, Numeric was the precursor to today's workhorse numpy. Numeric had a
 syntax very similar to Matlab's and, in turn, GAUSS which made the transition
 feasible. The gains Python offered in terms of the data integration and management
@@ -192,7 +190,7 @@ research goals but also to help the project move forward. I would like to think
 that we saw this coming in the early days of the library, but actually it is
 something that emerged with time.
 \section*{PySAL Structure}
-\label{sec:org349be7d}
+\label{sec:orgc8bb64e}
 The original design of PySAL was to have a single monolithic library with
 subcomponents that addressed different types of spatial analysis. This
 facilitated the easy installation of the package for end-users. Another guiding
@@ -208,7 +206,7 @@ These two features of PySAL served us well in the early days of the project.
 But as time has passed, the Python spatial analysis stack has matured, we are
 now at a point where we can start to replace some of the Python implementations
 that the early PySAL team did with more modern and specialized packages for
-geoprocessing, file reading, and map projections. A key win here has been the
+geoprocessing, file reading, and map projections. A key win here as been the
 package geopandas.\footnote{\url{https://geopandas.org}}
 
 
@@ -270,7 +268,7 @@ converter scripts which would automatically refactor the codebase to Python 3
 if a user required Python 3. This was a major effort to implement, and was
 actually a short-term solution, and a painful one at that. While it supported
 users who switched to Python 3, it did not allow us to fully exploit the new
-features in Python 3 as the converted code from Python 2  had to be backwards
+features in Python 3 as the converted code from Python 2 to had to be backwards
 compatible. In other words, there are things that one can do in Python 3 that
 one cannot do in Python 2, so in order to maintain 2.0 backwards compatability
 we were not be able to take advantage of this Python 3 enhancements. With the
@@ -294,7 +292,7 @@ intra-distributional change. In addition, \emph{explore} includes \emph{spaghett
 for spatial analysis on networks, and \emph{pointpats} which supports spatial analysis
 of planar point patterns.
 
-The \emph{viz} group of packages includes \emph{splot}, a new package providing a
+The \emph{viz} group of packages includes \emph{splot}, a new package providing common a
 common application programming interface (API) for lightweight visualization
 functionality on top of the other PySAL packages. \emph{mapclassify} is a second
 component of the visualization layer that implements a large number of
@@ -335,7 +333,7 @@ refactor region so that it can be integrated into the PySAL meta-package more
 easily.
 
 \section*{Wider Currents}
-\label{sec:orgd898bf7}
+\label{sec:orgf89c39f}
 PySAL has reached the state that it has because of being embedded in a wider set
 of developments. There are three currents that have benefited the project. These
 pertain to the rise of the open-source movement, the development of the open
@@ -409,7 +407,7 @@ have been long-standing and are not easily removed, but with sincere and
 prolonged effort, I have seen other communities make major strides in
 redressing these barriers.
 \section*{Bringing it home to regional science}
-\label{sec:org92caa96}
+\label{sec:org3ef7220}
 The academic world that I grew up in as a young regional scientist is
 substantially different than what is emerging now. And part of that emergence
 is due to the rise of the open-source movement and the changes it has induced in
@@ -436,7 +434,7 @@ Paul Waddell's work on the UrbanSim project \citep{waddell_urbansim:_2002} is
 another exemplar of first generation open source regional science. I remember
 meeting with Paul at 2001 WRSA meeting in Palm Springs and discussing the
 issues involved in moving UrbanSim from Java to Python. That switch to
-Python and the explicit open source model for UrbanSim have been  major
+Python and the explicit open source model for UrbanSim have been a major
 contributors to the project's success. Clearly, it is an excellent modeling
 system which is important for its scientific application, but the open source
 dimension has allowed others to be engaged in its enhancement and evolution, as
@@ -449,22 +447,20 @@ Levi Wolf, and Geoff Boeing. These individuals are prominent developers on
 high-profile open source projects and have been very creative in positioning
 their open source contributions into their formal academic profiles.
 
-Dani has been very generous in posting his Geographic Data Science
-course\footnote{\url{https://darribas.org/gds16/}} materials on his website and
-releasing them under Creative Commons
-licenses\footnote{\url{https://creativecommons.org/}}. This is incredibly
-helpful to individuals who are developing similar courses in that those
-materials are available and do not have to be reinvented. Moreover it is
-possible to contribute enhancements back to Dani's course, resulting in a
-stronger set of materials for future iterations of the course. Dani has been a
-core developer on the PySAL project where he became introduced to open source
-practices and creatively adopted them to his teaching duties. His example shows
-that the nature of contributions to open source projects has evolved over time,
-from the early days were only code enhancements and possibility documentation
-were considered contributions, to the current situation where contributions have
-grown to take the form of educational materials as well as efforts to
-disseminate those materials wide and grow the community around open source
-projects.
+Dani has been very generous in posting his Geographic Data Science course\footnote{\url{https://darribas.org/gds16/}}
+materials on his website and releasing them under Creative Commons
+licenses\footnote{\url{https://creativecommons.org/}}.  This is incredibly helpful to individuals who are developing
+similar courses in that those materials are available and do not have to be
+reinvented. Moreover it is possible to contribute enhancements back to Dani's
+course, resulting in a stronger set of materials for future iterations of the
+course. Dani has been a core developer on the PySAL project where he became
+introduced to open source practices and creatively adopted them to his teaching
+duties. His example shows that the nature of contributions to open source
+projects has evolved over time, from the early days were only code enhancements
+and possibility documentation were considered contributions, to the current
+situation where contributions have grown to take the form of educational
+materials as well as efforts to disseminate those materials wide and grow the
+community around open source projects.
 
 
 Levi Wolf is also a core member of the PySAL development project and has made
